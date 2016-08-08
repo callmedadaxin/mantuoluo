@@ -86,7 +86,7 @@ var userSet = {
 					that.error( r.error );
 				}else{
 					if ( r.data.result ) {
-						window.location.href = 'login.html';
+						window.location.href = './login.html';
 					};
 				}
 			});
