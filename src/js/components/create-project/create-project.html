@@ -1,0 +1,59 @@
+<div class="container">
+	<div class="nav-left">
+		<div class="logo"></div>
+		<div class="intro-wrap">
+			<a class="btn-back"><img src="./img/btn-back.png" height="31" width="20" alt=""></a>
+			<div class="circle-count">
+				<span class="label">当前圈层</span>
+				<span class="number">6</span>
+				<a class="btn-add-circle">添加圈层</a>
+			</div>
+			<h2 class="p-title">文化磁极</h2>
+			<div class="p-desc">
+				<p class="detail"><span class="title">描述</span><span id="desc">花单生于枝叉间或叶腋，直立，有短梗；花萼筒状。蒴果直立生，卵状表面生有坚硬针刺或有时无刺而近平滑，成熟后淡黄色，规则4瓣列，种子卵圆形，稍偏黑色</span></p>
+				<textarea id="p-desc-input" cols="30" rows="10"></textarea>
+				<a class="btn-edit-desc">修改描述</a>
+			</div>
+		</div>
+	</div>
+	<div class="content right">
+		<ul class="edit-list">
+			<li>
+				<a class="btn-tab">项目数量</a>
+				<div class="edit-block">
+					<label for="input-p-number">填写数量</label>
+					<input type="number" id="input-p-number">
+					<a class="btn-sub btn-add-number">确定</a>
+				</div>
+			</li>
+			<li>
+				<a class="btn-tab">项目颜色</a>
+				<div class="edit-block">
+					<label for="input-p-color">圈层颜色</label>
+					<input type="range" min="0" max="100" id="input-p-color">
+					<a class="btn-sub btn-set-color">确定</a>
+				</div>
+			</li>
+			<li>
+				<a class="btn-tab">圈层样式</a>
+				<div class="edit-block">
+					<ul class="p-icon-list">
+						<li><img src="./img/icon-line-01.png" data-icon="1" alt=""></li>
+						<li><img src="./img/icon-line-02.png" data-icon="2" alt=""></li>
+						<li><img src="./img/icon-line-03.png" data-icon="3" alt=""></li>
+						<li><img src="./img/icon-line-04.png" data-icon="4" alt=""></li>
+						<li><img src="./img/icon-line-05.png" data-icon="5" alt=""></li>
+					</ul>
+					<label for="input-p-icon-color" class="icon-set">颜色透明度</label>
+					<input type="range" min="0" max="100" id="input-p-icon-color">
+					<a class="btn-sub btn-set-icon">确定</a>
+				</div>
+			</li>
+		</ul>
+		<div class="p-content">
+			<div class="each-c c-0">地域建筑</div>
+		</div>
+		<a class="delete left"><img src="../../../img/trash.png"></a>
+		<a class="ok right"><img src="../../../img/checkmark.png"></a>
+	</div>
+</div>

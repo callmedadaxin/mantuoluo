@@ -1,0 +1,22 @@
+<div class="modal">
+	<div class="modal-content info">
+		<a class="close"></a>
+		<form id="form" enctype="multipart/form-data" name="form">
+			<h2 class="title">请在如下框中填入文字信息</h2>
+			<label for="project-name">名称</label>
+			<input type="text" name="blockName" id="project-name">
+			<a class="btn-add add-img">加入图片</a>
+			<input type="file" id="add-img" name="blockImgs" class="hide">
+			<a class="btn-add add-video">加入视频</a>
+			<input type="file" name="blockVideos" name="blockVideos" id="add-video" class="hide">
+			<a class="btn-add sub" id="sub">确定</a>
+			<label for="project-desc">描述</label>
+			<textarea id="project-desc" cols="30" rows="10" name="blockInfo"></textarea>
+		</form>
+		<div class="preview">
+			<h2 class="project-name-p"></h2>
+			<p class="project-desc-p"></p>
+			<ul class="project-imgs"></ul>
+		</div>
+	</div>
+</div>

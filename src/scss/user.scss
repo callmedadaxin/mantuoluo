@@ -1,0 +1,63 @@
+@import "home";
+.mt120{margin-top: 120px!important;}
+$red: #e60012;
+
+.new{
+	.name{
+		font-size: 30px;
+	}
+	.btn-exit{
+		background-color: $red;
+		text-align: center;
+		color: #fff;
+		font-size: 24px;
+		padding: 0 30px;
+		line-height: 40px;
+		border-radius: 5px;
+	}
+}
+
+.btn-edit-info{
+	cursor: pointer;
+}
+
+.info-list{
+	font-size: 24px;
+	line-height: 1;
+
+	.row{
+		width: 674px;
+		margin-top: 40px;
+	}
+
+	.label{
+
+		&:after{
+			content: ':';
+			font-size: 14px;
+			margin-left: 8px;
+		}
+	}
+
+	.input-info{
+		display: none;
+		outline: none;
+		padding-left: 8px;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	&.editing{
+		.input-info {
+			display: inline-block;
+		}
+
+		.cont{
+			display: none;
+		}
+
+		#username{
+			display: inline-block;
+		}
+	}
+}

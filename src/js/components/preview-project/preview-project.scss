@@ -1,0 +1,30 @@
+@import "../../../scss/mixin.scss";
+
+.preview-btn{
+	display: inline-block;
+	margin-bottom: 50px;
+	font-size: 20px;
+	width: 140px;
+	line-height: 40px;
+	color: #fff;
+	@include border-corner-radius( top, left , 20px);
+	@include border-corner-radius( top, right , 20px);
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+
+	&:hover{
+		background-color: #bfbfbf;
+	}
+}
+
+.btn-eidt-list{
+	margin-top: 95px;
+	width: 140px;
+}
+
+.preview-btn-delete{
+	margin-top: 10px;
+	float: right;
+	border-radius: 10px;
+}

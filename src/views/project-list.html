@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<div class="nav-left">
+			<div class="logo"></div>
+			<ul class="nav-list">
+				<li class="active"><a href="./project-list.html">我的项目</a></li>
+				<li><a href="./share-list.html">我的分享</a></li>
+				<li><a href="./user.html">用户管理</a></li>
+			</ul>
+		</div>
+		<div class="content left">
+			<h2 class="left title">我的项目</h2>
+			<div class="new right">
+				<a href="#" class="btn-new right">新建空白项目</a>
+			</div>
+			<div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+						<div class="p-content">
+							<div class="each-c c-0">地域建筑</div>
+						</div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+      	<div class="swiper-button-prev"></div>
+	    </div>
+			<div class="intro-wrap">
+				<ul class="intro-title">
+					<li class="li-left">名称</li>
+					<li class="li-right">预览</li>
+				</ul>
+				<p class="intro-detail">
+				</p>
+				<div class="icon-set right dib">
+					<img src="../img/icon-set.png" height="19" width="19" class="btn-set">
+					<ul class="setting-list hide">
+						<li><a class="start-edit">编辑</a></li>
+						<li><a href="#">分享</a></li>
+						<li><a href="#">下载</a></li>
+						<li><a href="#">删除</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal">
+		<div class="modal-content add">
+			<form>
+				<label for="project-name">名称</label>
+				<input type="text" id="project-name">
+				<label for="project-desc" class="left">描述</label>
+				<textarea id="project-desc" cols="30" rows="10"></textarea>
+			</form>
+			<a class="cancel">取消</a>
+			<a class="sub">确定</a>
+		</div>
+	</div>
+</body>
+</html>

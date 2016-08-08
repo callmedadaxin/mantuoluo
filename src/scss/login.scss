@@ -1,0 +1,109 @@
+@import "index";
+@import "mixin";
+
+.login-wrap{
+	position: relative;
+	top: 25.7%;
+	margin: 0 auto;
+	width: 960px;
+
+	@include clearfix;
+}
+
+.left-wrap{
+	width: 140px;
+	@include clearfix;
+
+	.logo,.btn-register{
+		width: 140px;
+	}
+}
+
+.btn-register{
+	margin-top: 40px;
+	line-height: 48px;
+	@include border-corner-radius(top, right, 24px);
+}
+
+.login-form{
+	width: 660px;
+
+	.input-row{
+		width: 100%;
+		height: 60px;
+
+		input{
+			float: left;
+			width: 0;
+			height: 60px;
+			padding: 0;
+			border: none;
+			outline: none;
+			background-color: #e60012;
+			@include transition(all 1s);
+
+			&.active{
+				width: 488px;
+			}
+		}
+
+		label{
+			float: left;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			@include transition(width 1s);
+		}
+
+		&.active{
+			input{
+				width: 488px;
+				padding-left: 12px;
+				font-size: 20px;
+				color: #fff;
+			}
+			label{
+				width: 172px;
+			}
+		}
+	}
+}
+
+.check-icon{
+	display: inline-block;
+	vertical-align: top;
+	width: 24px;
+	height: 32px;
+	background-image: url("../img/check-box.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.check-box{
+	position: absolute;
+	clip: rect(0,0,0,0); 
+	*left: -999px;
+}
+
+:checked + .check-icon{
+	background-image: url("../img/check-box-active.png");
+}
+
+label[for=check-remember]{
+	line-height: 1.5;
+	cursor: pointer;
+	-webkit-user-select: none; /* for Chrome */
+	-moz-user-select: none; /* for Firefox */
+	user-select: none;
+}
+
+.btn-login{
+	display: inline-block;
+	width: 660px;
+
+	&:hover{
+		background-color: #bfbfbf;
+	}
+}
+
+
+
